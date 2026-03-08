@@ -13,11 +13,16 @@ export default async function handler(req, res) {
       }
     );
     const data = await response.json();
+    console.log("Gemini response:", JSON.stringify(data));
+    if (data.error) {
+      return res.status(500).json({ error: data.error.message });
+    }
     const text = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
     const clean = text.replace(/```json|```/g, "").trim();
     const parsed = JSON.parse(clean);
     res.status(200).json(parsed);
   } catch (err) {
-    res.status(500).json({ error: "Something went wrong. Please try again." });
+    console.log("Catch error:", err.message);
+    res.status(500).json({ error: err.message });
   }
 }

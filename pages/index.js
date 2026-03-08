@@ -206,7 +206,26 @@ Only include the platforms that were requested.`;
         @keyframes pulse { 0%,100%{opacity:0.4} 50%{opacity:1} }
         .loading-dot { width:8px; height:8px; background:#FF6B00; border-radius:50%; animation:pulse 1.2s ease-in-out infinite; }
       `}</style>
-
+<nav style={{
+  display: "flex", justifyContent: "space-between", alignItems: "center",
+  padding: "20px 40px", borderBottom: "1px solid rgba(255,255,255,0.06)"
+}}>
+  <span style={{
+    fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, letterSpacing: 2,
+    background: "linear-gradient(135deg, #fff 0%, #FF6B00 100%)",
+    WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
+  }}>FITCONTENT AI</span>
+  <div style={{ display: "flex", gap: 24, alignItems: "center" }}>
+    <a href="/pricing" style={{
+      color: "#888", textDecoration: "none", fontSize: 14, fontWeight: 500
+    }}>Pricing</a>
+    <a href="/pricing" style={{
+      background: "linear-gradient(135deg, #FF6B00, #FF3D00)",
+      color: "white", padding: "8px 20px", borderRadius: 8,
+      textDecoration: "none", fontSize: 14, fontWeight: 700
+    }}>Get Pro ⚡</a>
+  </div>
+</nav>
       <div style={{ maxWidth: 860, margin: "0 auto", padding: "40px 20px", position: "relative", zIndex: 1 }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <div style={{

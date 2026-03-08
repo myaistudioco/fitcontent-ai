@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEOHead from "../components/SEOHead";
 
 const PLATFORMS = [
   { id: "instagram", label: "Instagram Caption", icon: "📸", color: "#E1306C" },
@@ -102,6 +103,7 @@ Only include the platforms that were requested.`;
       position: "relative",
       overflow: "hidden"
     }}>
+        <SEOHead />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         * { box-sizing: border-box; }

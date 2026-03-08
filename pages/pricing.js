@@ -1,3 +1,4 @@
+import SEOHead from "../components/SEOHead";
 export default function Pricing() {
   return (
     <div style={{
@@ -7,6 +8,11 @@ export default function Pricing() {
       color: "#fff",
       padding: "0",
     }}>
+  <SEOHead 
+  title="Pricing — FitContent AI"
+  description="Simple pricing for fitness coaches. Start free, upgrade when ready."
+  url="https://fitcontentai.com/pricing"
+/>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap');
         * { box-sizing: border-box; }

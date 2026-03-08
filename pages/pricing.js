@@ -181,7 +181,7 @@ export default function Pricing() {
             <div style={{ marginBottom: 24 }}>
               <div style={{ fontSize: 13, fontWeight: 600, color: "#FF6B00", letterSpacing: 1, marginBottom: 8 }}>PRO</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-                <span style={{ fontSize: 48, fontWeight: 700, fontFamily: "'Bebas Neue', sans-serif", letterSpacing: 1, color: "#FF6B00" }}>$19</span>
+                <span style={{ fontSize: 48, fontWeight: 700, fontFamily: "'Bebas Neue', sans-serif", letterSpacing: 1, color: "#FF6B00" }}>$9.99</span>
                 <span style={{ color: "#555", fontSize: 14 }}>/month</span>
               </div>
               <p style={{ color: "#555", fontSize: 13, marginTop: 8 }}>For serious fitness coaches</p>
@@ -202,7 +202,7 @@ export default function Pricing() {
             ))}
 
             <button className="cta-btn primary" onClick={() => alert("Payment coming soon! Check back in 24hrs.")}>
-              ⚡ Start Pro — $19/mo
+              ⚡ Start Pro — $9.99/mo
             </button>
           </div>
 
@@ -211,7 +211,7 @@ export default function Pricing() {
             <div style={{ marginBottom: 24 }}>
               <div style={{ fontSize: 13, fontWeight: 600, color: "#666", letterSpacing: 1, marginBottom: 8 }}>AGENCY</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-                <span style={{ fontSize: 48, fontWeight: 700, fontFamily: "'Bebas Neue', sans-serif", letterSpacing: 1 }}>$49</span>
+                <span style={{ fontSize: 48, fontWeight: 700, fontFamily: "'Bebas Neue', sans-serif", letterSpacing: 1 }}>$29</span>
                 <span style={{ color: "#555", fontSize: 14 }}>/month</span>
               </div>
               <p style={{ color: "#555", fontSize: 13, marginTop: 8 }}>For fitness studios & agencies</p>
@@ -232,7 +232,7 @@ export default function Pricing() {
             ))}
 
             <button className="cta-btn secondary" onClick={() => alert("Payment coming soon! Check back in 24hrs.")}>
-              Start Agency — $49/mo
+              Start Agency — $29/mo
             </button>
           </div>
 

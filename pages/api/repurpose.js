@@ -11,14 +11,17 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
-        max_tokens: 1000,
+        max_tokens: 2000,
         messages: [{ role: "user", content: prompt }],
       }),
     });
     const data = await response.json();
     const text = data.content?.map((i) => i.text || "").join("") || "";
-    const clean = text.replace(/```json|```/g, "").trim();
-    const parsed = JSON.parse(clean);
+    const jsonMatch = text.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) {
+      return res.status(500).json({ error: "No valid response received" });
+    }
+    const parsed = JSON.parse(jsonMatch[0]);
     res.status(200).json(parsed);
   } catch (err) {
     res.status(500).json({ error: err.message });

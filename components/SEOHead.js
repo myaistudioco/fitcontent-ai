@@ -15,6 +15,7 @@ export default function SEOHead({
       <meta name="author" content="FitContent AI" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={url} />
+      <meta name="google-site-verification" content="Aaj6c9jKtjlWh9w1IgBGvNb6SDZOk82mB3YUJ8FnScQ" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />

@@ -28,6 +28,13 @@ export default function SEOHead({
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={image} />
       <link rel="icon" href="/favicon.ico" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-31Y9GETX3R"></script>
+<script dangerouslySetInnerHTML={{ __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-31Y9GETX3R');
+`}} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <script
         type="application/ld+json"

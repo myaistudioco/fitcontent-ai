@@ -115,7 +115,7 @@ export default function Pricing() {
             {["Unlimited repurposes","All 6 platforms at once","All tones + custom tone","Priority AI processing","Save & organize content","Email support"].map(f => (
               <div key={f} className="feature-item"><span className="checkmark">✓</span>{f}</div>
             ))}
-            <button className="cta-btn primary" onClick={() => window.open("https://myaistudio.gumroad.com/l/fitcontentai-pro", "_blank")}>
+            <button className="cta-btn primary" onClick={() => window.open("https://checkout.dodopayments.com/buy/pdt_0NaGcVBpajCyRGB4J40uq?quantity=1", "_blank")}>
               ⚡ Start Pro — $9.99/mo
             </button>
           </div>
@@ -133,7 +133,7 @@ export default function Pricing() {
             {["Everything in Pro","Up to 10 team members","Client management dashboard","White label option","API access","Priority support"].map(f => (
               <div key={f} className="feature-item"><span className="checkmark">✓</span>{f}</div>
             ))}
-            <button className="cta-btn secondary" onClick={() => window.open("https://myaistudio.gumroad.com/l/fitcontentai-pro", "_blank")}>
+            <button className="cta-btn secondary" onClick={() => window.open("https://checkout.dodopayments.com/buy/pdt_0NaGdMa3ofaZrEILPS7Tz?quantity=1", "_blank")}>
               Start Agency — $29/mo
             </button>
           </div>
@@ -147,7 +147,7 @@ export default function Pricing() {
             { q: "Do I need a credit card to start?", a: "No! Start with a 7-day free trial. No credit card needed." },
             { q: "Can I cancel anytime?", a: "Yes! Cancel with one click. No questions asked." },
             { q: "What platforms does it support?", a: "Instagram, Twitter/X, TikTok, LinkedIn, Email Newsletter and YouTube." },
-            { q: "How good is the AI content?", a: "Powered by Claude AI — the same AI used by top companies worldwide. Content is platform-native and ready to post!" },
+            { q: "How good is the AI content?", a: "Powered by AI — the same technology used by top companies worldwide. Content is platform-native and ready to post!" },
           ].map((faq) => (
             <div key={faq.q} style={{ borderBottom: "1px solid rgba(255,255,255,0.06)", padding: "16px 0" }}>
               <div style={{ fontWeight: 600, marginBottom: 6, fontSize: 15 }}>{faq.q}</div>
@@ -159,7 +159,7 @@ export default function Pricing() {
         {/* Bottom CTA */}
         <div style={{ textAlign: "center", marginTop: 60 }}>
           <p style={{ color: "#555", fontSize: 14, marginBottom: 20 }}>Join fitness coaches saving 10+ hours every week</p>
-          <a href="https://myaistudio.gumroad.com/l/fitcontentai-pro" target="_blank" rel="noreferrer" style={{ background: "linear-gradient(135deg, #FF6B00, #FF3D00)", color: "white", padding: "16px 40px", borderRadius: 14, textDecoration: "none", fontSize: 16, fontWeight: 700, boxShadow: "0 8px 32px rgba(255,107,0,0.3)" }}>⚡ Start Free Trial Today</a>
+          <a href="https://checkout.dodopayments.com/buy/pdt_0NaGcVBpajCyRGB4J40uq?quantity=1" target="_blank" rel="noreferrer" style={{ background: "linear-gradient(135deg, #FF6B00, #FF3D00)", color: "white", padding: "16px 40px", borderRadius: 14, textDecoration: "none", fontSize: 16, fontWeight: 700, boxShadow: "0 8px 32px rgba(255,107,0,0.3)" }}>⚡ Start Free Trial Today</a>
         </div>
 
       </div>
